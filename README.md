@@ -8,7 +8,7 @@ O sistema substitui o controle manual (feito em pranchetas e planilhas descentra
  * O Problema: A equipe de enfermagem do trabalho perdia muito tempo gerenciando papéis, o que dificultava o controle de validade dos EPIs e aumentava o risco de exposição dos coletores nas ruas.
  * A Solução: Uma aplicação em Java com Spring Boot baseada na arquitetura MVC (Model-View-Controller). O sistema permite o registro instantâneo da entrega de equipamentos, salvando os dados em um banco de dados relacional e exibindo o histórico em uma interface web simples e intuitiva.
 💻 Telas do Sistema
-(<img width="1112" height="698" alt="Image" src="https://github.com/user-attachments/assets/c804ebb5-984d-4fd8-95f7-cd50930a5af0" />)
+> <img width="1112" height="698" alt="Image" src="https://github.com/user-attachments/assets/c804ebb5-984d-4fd8-95f7-cd50930a5af0" />
 > <img width="1095" height="567" alt="Image" src="https://github.com/user-attachments/assets/2e76ace8-91be-4d53-91e6-b538d0e42b73" />
 > 
 🧠 Desafios e Aprendizados (O processo de Desenvolvimento)
@@ -21,11 +21,3 @@ Durante a construção deste projeto "do zero", enfrentei e resolvi diversos des
    * O que aprendi: Entendi como as classes conversam entre si. Um erro clássico de "método não encontrado" (como o save ou findAll) foi resolvido entendendo que o Controller precisa ter o caminho exato (import) de onde estão o Model e o Repository.
  * Banco de Dados em Memória (H2 Console):
    * O que aprendi: Configurei o application.properties para rodar o H2 Database. Aprendi a acessar o console via navegador (localhost:8080/h2-console) para validar se as informações inseridas na interface web estavam realmente sendo persistidas no banco com os comandos SQL.
-🚀 Como executar este projeto na sua máquina
- * Certifique-se de ter o Java 17+ e uma IDE (como VS Code, IntelliJ ou Eclipse) instalados.
- * Faça o clone deste repositório:
-   git clone https://github.com/SEU_USUARIO/epi-manager.git
-
- * Abra o projeto na sua IDE e execute o arquivo principal EpiManagerApplication.java.
- * O servidor iniciará automaticamente. Abra o navegador e acesse:
-   http://localhost:8080
